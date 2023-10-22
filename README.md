@@ -1,4 +1,5 @@
 ### Tensorflow Serving via REST API and gRPC with Docker
+Model is an YOLOv8 model. This model was trained for Face Detection and converted Tensorflow model format.
 #### 1. Tensorflow Serving via REST API with Docker
 - Download the TensorFlow Serving Docker image
 <pre>
