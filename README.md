@@ -16,5 +16,7 @@ tensorflow_model_server --rest_api_port=8601 --model_name=yolov8_tf_serving --mo
 <pre>
 tensorflow_model_server --rest_api_port=8601 --model_config_file=/Tensorflow_Serving/model.config.a
 </pre> 
+- TF Serving Installation Instructions & Config File Help
+  https://www.tensorflow.org/tfx/serving/docker https://www.tensorflow.org/tfx/serving/serving_config
 
 
