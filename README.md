@@ -20,4 +20,12 @@ tensorflow_model_server --rest_api_port=8601 --model_config_file=/Tensorflow_Ser
 - TF Serving Installation Instructions & Config File Help
   https://www.tensorflow.org/tfx/serving/docker https://www.tensorflow.org/tfx/serving/serving_config
 
-
+#### 2. Tensorflow Serving via gRPC with Docker
+- To start docker container
+<pre>
+docker run -it -v /home/airi/yolo/Tensorflow_Serving:/Tensorflow_Serving -p 2000:2000 --entrypoint /bin/bash tensorflow/serving
+</pre> 
+- To serve only latest model
+<pre>
+tensorflow_model_server --port=2000 --model_name=tf_serving_grpc --model_base_path=/Tensorflow_Serving/saved_models
+</pre> 
